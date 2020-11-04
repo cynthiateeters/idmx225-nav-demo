@@ -16,13 +16,8 @@ main {
 .skip {
   position: absolute;
   left: 50%;
-  position: absolute;
   transform: translateY(-100%);
   transition: transform 0s;
-  height: 1px;
-  width: 1px;
-  text-align: left;
-  overflow: hidden;
   background-color: #333;
   padding: 1.5rem;
   color: white;
@@ -39,7 +34,7 @@ a.skip:hover {
   width: auto;
   height: auto;
   overflow: visible;
-  transition: transform 0.3s;
+  transition: transform 0.25s;
 }
 
 /* navbar */
