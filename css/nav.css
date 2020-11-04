@@ -15,12 +15,9 @@ main {
 /* skip link */
 .skip {
   position: absolute;
-  top: -1000px;
-  left: -1000px;
-  height: 1px;
-  width: 1px;
-  text-align: left;
-  overflow: hidden;
+  left: 50%;
+  transform: translateY(-100%);
+  transition: transform 0s;
   background-color: #333;
   padding: 1.5rem;
   color: white;
@@ -31,17 +28,20 @@ main {
 a.skip:active,
 a.skip:focus,
 a.skip:hover {
+  transform: translateY(0%);
   left: 1rem;
   top: 1rem;
   width: auto;
   height: auto;
   overflow: visible;
+  transition: transform 0.25s;
 }
 
 /* navbar */
 
 .navbar {
-  padding: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,8 +91,6 @@ header a:focus {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.5rem;
-    font-size: 1.5rem;
   }
 
   .navbar ul {
