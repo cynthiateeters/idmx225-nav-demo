@@ -1,0 +1,152 @@
+body {
+  font-family: Roboto;
+  background-color: #edba61;
+  color: #3267a1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Grenze Gotisch';
+  text-align: center;
+  font-size: 40pt;
+}
+
+header {
+  text-align: center;
+}
+
+#hero,
+footer {
+  color: #82beff;
+  border: 2px solid #61a5ed;
+  background-color: #a3721c;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Hero Section */
+
+#hero img {
+  width: 300px;
+}
+
+/* Bio Section */
+
+#bio {
+  text-align: center;
+}
+
+/* Hobbies */
+
+#hobbies ul li:nth-child(even) {
+  color: #000;
+}
+
+/* Gallery */
+
+#gallery {
+  border: 2px solid #61a5ed;
+  margin-bottom: 2rem;
+}
+
+#gallery img {
+  max-width: 100%;
+}
+
+#gallery figure {
+  text-align: center;
+}
+
+/* Literature */
+#lit {
+  border: 2px solid #61a5ed;
+  margin-bottom: 2rem;
+}
+
+#lit div {
+  padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+#lit div p {
+  padding: 0.3rem 0;
+  clear: both;
+}
+
+/* Dropcaps */
+
+#lit div p:nth-child(3n + 1):first-letter {
+  color: #3267a1;
+  background-image: radial-gradient(#fff, #a3721c);
+  float: left;
+  font-size: 3em;
+  padding: 0.25em;
+  margin-right: 0.25em;
+  line-height: 0.65;
+  border: 4px outset #3267a1;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+
+/* Embedded SVG */
+
+.vector {
+  text-align: center;
+}
+
+/* Contact Form */
+
+#formElements {
+  display: grid;
+  row-gap: 0.5em;
+}
+
+#contact {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+fieldset {
+  border: 2px solid #61a5ed;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+legend {
+  background-color: #61a5ed;
+  color: white;
+  padding: 0.5em;
+}
+
+#contact input,
+#contact textarea,
+#contact select,
+#contact button {
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0px;
+}
+#contact li {
+  margin: 1rem;
+}
+
+#contact button {
+  background-color: #61a5ed;
+  color: white;
+  border: 1px solid #3267a1;
+  max-width: 400px;
+  width: 50%;
+  justify-self: center;
+}
