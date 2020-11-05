@@ -101,7 +101,7 @@ header a:focus {
   flex-direction: column;
   justify-content: space-between;
   width: 2rem;
-  height: 1.5rem;
+  height: 20px;
 }
 .navbar-links {
   display: none;
@@ -115,23 +115,24 @@ header a:focus {
 */
 
 .toggle-button .bar {
-  height: 3px;
+  height: 4px;
   width: 100%;
   background-color: whitesmoke;
   border-radius: 10px;
   opacity: 1;
   transform: translateY(0) rotate(0);
+  transform-origin: center;
   transition: all 200ms ease;
 }
 
 .toggle-button.active .bar1 {
-  transform: translateY(11px) rotate(45deg);
+  transform: translateY(200%) rotate(45deg);
 }
 .toggle-button.active .bar2 {
   opacity: 0;
 }
 .toggle-button.active .bar3 {
-  transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-200%) rotate(-45deg);
 }
 
 /* 
