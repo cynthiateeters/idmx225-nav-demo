@@ -45,6 +45,8 @@ a.skip:hover {
   margin-bottom: 1rem;
 }
 
+/* logo */
+
 .logo {
   display: flex;
   align-items: center;
@@ -59,11 +61,15 @@ a.skip:hover {
   width: 4vh;
 }
 
+/* navigation list */
+
 nav li {
   list-style: none;
   display: block;
   padding: 0.5em 0;
 }
+
+/*  style all a tags in header */
 
 header a {
   color: whitesmoke;
@@ -82,20 +88,24 @@ header a:focus {
   outline: none;
 }
 
+/* 
+media query for non-mobile nav bar
+
+min-width set to width of nav elements 
+such that no text wraps 
+*/
 @media screen and (min-width: 70rem) {
+  /* change flex direction to row */
   .navbar {
     flex-direction: row;
     justify-content: space-between;
   }
 
+  /* give ul room for link text */
   .navbar ul {
     display: flex;
     justify-content: space-around;
     width: 50%;
     max-width: 40rem;
-  }
-
-  header a {
-    padding: 1.5rem;
   }
 }
