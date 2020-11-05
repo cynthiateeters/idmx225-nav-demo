@@ -1,13 +1,16 @@
+/* make scrolling smooth */
 html {
   scroll-behavior: smooth;
 }
 
+/* get rid of padding & sizing */
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* add some padding back to rest of page */
 main {
   padding: 2vw;
 }
@@ -88,13 +91,67 @@ header a:focus {
   outline: none;
 }
 
+/* toggle menu open & close */
+
+.toggle-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 20px;
+}
+.navbar-links {
+  display: none;
+}
+
+.navbar-links.active {
+  display: block;
+}
+
+/* toggle hamburger button open & close 
+*/
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  opacity: 1;
+  transform: translateY(0) rotate(0);
+  transform-origin: center;
+  transition: all 200ms ease;
+}
+
+.toggle-button.active .bar1 {
+  transform: translateY(200%) rotate(45deg);
+}
+.toggle-button.active .bar2 {
+  opacity: 0;
+}
+.toggle-button.active .bar3 {
+  transform: translateY(-200%) rotate(-45deg);
+}
+
 /* 
 media query for non-mobile nav bar
 
 min-width set to width of nav elements 
 such that no text wraps 
 */
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 60rem) {
+  /* turn off toggle button */
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* change flex direction to row */
   .navbar {
     flex-direction: row;
@@ -104,8 +161,6 @@ such that no text wraps
   /* give ul room for link text */
   .navbar ul {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    max-width: 40rem;
+    justify-content: space-between;
   }
 }
